@@ -18,6 +18,17 @@ import javax.servlet.http.HttpServletResponse;
  */
 public class noteServlet extends HttpServlet {
 
+    @Override
+    protected void doGet(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        getServletContext().getRequestDispatcher("/WEB-INF/editNote.jsp").forward(request, response);
 
+    }
+
+    protected void doPost(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        String title = request.getParameter("title");
+        String contents = request.getParameter("contents");
+    }
 
 }
