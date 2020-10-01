@@ -15,9 +15,9 @@
         <h1>Simple Note Keeper</h1>
         <h2>View Note</h2>
         <h3>Title:</h3>
-        <p></p>
+        <p>${note.title}</p>
         <h3>Contents:</h3>
-        <p></p>
-
+        <p>${note.contents}</p>
+        <a href="editNote">Edit</a>
     </body>
 </html>
